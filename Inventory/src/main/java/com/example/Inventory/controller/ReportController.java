@@ -13,21 +13,21 @@ import java.util.List;
 @RequestMapping("/api/report")
 @CrossOrigin(origins = "http://localhost:3000")
 public class ReportController {
-    @Autowired
-    private ReportService reportService;
+	@Autowired
+	private ReportService reportService;
 
-    @GetMapping("/stock")
-    public List<Stock> generateStockReport() {
-        return reportService.generateStockReport();
-    }
+	@GetMapping("/stock")
+	public List<Stock> generateStockReport() {
+		return reportService.generateStockReport();
+	}
 
-    @GetMapping("/order")
-    public List<Order> generateOrderReport() {
-        return reportService.generateOrderReport();
-    }
+	@GetMapping("/order")
+	public List<Order> generateOrderReport() {
+		return reportService.generateOrderReport();
+	}
 
-    @GetMapping("/supplier")
-    public List<Supplier> generateSupplierReport() {
-        return reportService.generateSupplierReport();
-    }
+	@GetMapping("/supplier")
+	public List<Supplier> generateSupplierReport() {
+		return reportService.generateSupplierReport();
+	}
 }

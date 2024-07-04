@@ -13,22 +13,22 @@ import java.util.List;
 
 @Service
 public class ReportService {
- @Autowired
- private StockRepository stockRepository;
- @Autowired
- private OrderRepository orderRepository;
- @Autowired
- private SupplierRepository supplierRepository;
+	@Autowired
+	private StockRepository stockRepository;
+	@Autowired
+	private OrderRepository orderRepository;
+	@Autowired
+	private SupplierRepository supplierRepository;
 
- public List<Stock> generateStockReport() {
-     return stockRepository.findAll();
- }
+	public List<Stock> generateStockReport() {
+		return stockRepository.findAll();
+	}
 
- public List<Order> generateOrderReport() {
-     return orderRepository.findAll();
- }
+	public List<Order> generateOrderReport() {
+		return orderRepository.findAll();
+	}
 
- public List<Supplier> generateSupplierReport() {
-     return supplierRepository.findAll();
- }
+	public List<Supplier> generateSupplierReport() {
+		return supplierRepository.findAll();
+	}
 }
